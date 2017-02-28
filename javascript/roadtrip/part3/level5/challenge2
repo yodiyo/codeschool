@@ -1,0 +1,9 @@
+Array.prototype.countCattle = function(kind) {
+	var numKind = this.length;
+  for (i=0; i < numKind; i++){
+    if (this[i]["type"] === kind){
+    	numKind++;
+    }
+  }
+  return numKind;
+}
